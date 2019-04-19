@@ -21,4 +21,8 @@ enum PlayerType
   NONE = 2,   // どちらでもない
 };
 
+inline PlayerType getOppType(PlayerType& my_type) {
+  return !my_type;
+}
+
 #endif // _TYPES_H_
