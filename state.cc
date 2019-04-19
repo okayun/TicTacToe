@@ -125,7 +125,7 @@ bool State::isEnd()
  * 空のセルの座標をまとめて返す
  * 関数名変更した方がいいかも
  */
-std::vector<std::pair<int, int>> State::getEmptyCells()
+std::vector<std::pair<int, int>> State::getActions()
 {
   std::vector<std::pair<int, int>> ret;
 

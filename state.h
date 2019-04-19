@@ -36,7 +36,7 @@ public:
   /**
    * 何も置かれていないセルの座標をまとめて返す
    */
-  std::vector<std::pair<int, int>> getEmptyCells();
+  std::vector<std::pair<int, int>> getActions();
 
   /**
    * 勝利したプレイヤを返す
