@@ -6,7 +6,7 @@
 
 #include "types.h"
 
-extern const int kSide = 3;
+const int kSide = 3;
 
 /**
  * ゲームの状態

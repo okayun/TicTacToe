@@ -1,7 +1,5 @@
 #include "state.h"
 
-extern const int kSide;
-
 /**
  * 状態の初期化
  */
@@ -124,10 +122,22 @@ bool State::isEnd()
 }
 
 /**
- * 何も置かれていないセルの座標をまとめて返す
+ * 空のセルの座標をまとめて返す
+ * 関数名変更した方がいいかも
  */
 std::vector<std::pair<int, int>> State::getEmptyCells()
 {
+  std::vector<std::pair<int, int>> ret;
+
+  for (int h = 0; h < kSide; ++h) {
+    for (int w = 0; w < kSide; ++w) {
+      if (board[h][w] == EMPTY) {
+        ret.push_back(std::make_pair(h, w));
+      }
+    }
+  }
+
+  return ret;
 }
 
 /**
